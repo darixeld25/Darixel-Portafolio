@@ -1,0 +1,373 @@
+/* Estilos Vintage */
+:root {
+  --primary: #a0faea; /* Azul claro */
+  --secondary: #057989; /* Verde azulado/acento */
+  --background: #000000; /* Gris muy claro */
+  --surface: #ffffff; /* Blanco */
+  --surface-dark: #1388ba; /* Fondo oscuro para secciones */
+  --text-main: #ffffff; /* Negro para textos principales */
+  --text-light: #ffffff; /* Blanco para textos sobre fondos oscuros */
+  --border: #000000; /* Gris claro */
+  --shadow: 0 4px 24px rgba(188, 238, 252, 0.08);
+}
+
+body {
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  background: var(--background);
+  color: var(--text-main);
+}
+
+/* Navbar Vintage */
+.vintage-navbar {
+  background: linear-gradient(90deg, #97deff 0%, #16a2b5 100%) !important;
+  border-bottom: 2px solid var(--secondary);
+  box-shadow: var(--shadow);
+}
+
+/* Hero Section Vintage */
+.vintage-hero {
+  background: linear-gradient(135deg, var(--vintage-primary) 0%, var(--vintage-secondary) 50%, var(--vintage-accent) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.vintage-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.vintage-title, .vintage-heading {
+  color: var(--text-main);
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.vintage-subtitle {
+  color: var(--vintage-accent);
+  font-style: italic;
+}
+
+.vintage-description {
+  color: var(--vintage-secondary);
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.vintage-profile {
+  border: 4px solid var(--vintage-accent);
+  box-shadow: 0 8px 32px rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+}
+
+.vintage-profile:hover {
+  transform: scale(1.05);
+}
+
+/* Botones Vintage */
+.vintage-btn {
+  background: linear-gradient(90deg, var(--secondary), var(--primary));
+  border: none;
+  color: var(--text-main);
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.vintage-btn:hover {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: var(--text-main);
+}
+
+/* Secciones Vintage */
+.vintage-section, .vintage-light-section {
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  color: var(--text-main);
+}
+
+.vintage-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vintage-accent), var(--vintage-secondary));
+  border-radius: 2px;
+}
+
+.vintage-text {
+  color: var(--text-main);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.vintage-highlight {
+  background: linear-gradient(135deg, var(--vintage-accent), #f5f5f5);
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--vintage-accent);
+  margin-top: 1rem;
+  box-shadow: 0 4px 15px rgb(255, 255, 255);
+  color: var(--vintage-text);
+}
+
+/* Imágenes Vintage */
+.vintage-image {
+  border: 3px solid var(--vintage-accent);
+  box-shadow: 0 8px 25px rgba(33, 33, 33, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.vintage-image:hover {
+  transform: scale(1.02);
+}
+
+/* Tarjetas de Competencias */
+.vintage-skill-card, .vintage-project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  color: var(--text-main);
+}
+
+.vintage-skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(33, 33, 33, 0.06);
+  border-color: var(--vintage-accent);
+}
+
+.vintage-skill-name {
+  font-weight: bold;
+  color: var(--vintage-dark);
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.vintage-skill-desc {
+  color: var(--vintage-text);
+  font-style: italic;
+}
+
+/* Tarjetas Vintage */
+.vintage-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  color: #000000;
+}
+
+.vintage-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgb(255, 255, 255);
+  border-color: var(--vintage-accent);
+}
+
+.vintage-card-title {
+  color: #000000;
+  font-weight: 600;
+}
+
+.vintage-card-subtitle {
+  color: var(--secondary);
+}
+
+.vintage-card-text {
+  color: #000000;
+  line-height: 1.7;
+}
+
+.vintage-card-highlight {
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border-left: 3px solid var(--vintage-accent);
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+/* Tarjetas de Proyectos */
+.vintage-project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  color: #ffffff;
+}
+
+.vintage-project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(33, 33, 33, 0.08);
+  border-color: var(--vintage-accent);
+}
+
+.vintage-project-card .vintage-card-title {
+  color: #ffffff;
+}
+
+.vintage-project-card .vintage-card-text {
+  color: #ffffff;
+}
+
+.vintage-badge {
+  background: var(--secondary) !important;
+  color: var(--text-light) !important;
+  border: none;
+}
+
+/* Formulario Vintage */
+.vintage-form {
+  background: #000000;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 2px solid var(--vintage-border);
+  box-shadow: 0 8px 25px rgba(33, 33, 33, 0.03);
+  color: var(--vintage-text);
+}
+
+.vintage-label {
+  color: var(--text-main);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.vintage-input {
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+  background: var(--surface);
+  color: var(--text-main);
+}
+
+.vintage-input:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 0.2rem rgba(5, 121, 137, 0.15);
+  background: var(--surface);
+  color: var(--text-main);
+}
+
+/* Footer Vintage */
+.vintage-footer {
+  background: linear-gradient(90deg, #97deff 0%, #1388ba 100%);
+  color: var(--text-main);
+  border-top: 2px solid var(--secondary);
+}
+
+.vintage-footer-text {
+  color: var(--text-main);
+}
+
+
+.vintage-social-link {
+  color: var(--secondary) !important;
+}
+
+.vintage-social-link:hover {
+  color: var(--text-main) !important;
+  background: var(--secondary);
+}
+
+/* Dark mode vintage */
+body.dark-mode {
+  background: #181a20;
+  color: var(--text-light);
+}
+
+body.dark-mode .vintage-section, body.dark-mode .vintage-light-section, body.dark-mode .vintage-card, body.dark-mode .vintage-skill-card, body.dark-mode .vintage-project-card, body.dark-mode .vintage-form {
+  background: #23272f;
+  color: var(--text-light);
+  border-color: #2c3140;
+}
+
+body.dark-mode .vintage-input {
+  background: #424242;
+  color: #f5f5f5;
+  border-color: var(--vintage-accent);
+}
+
+body.dark-mode .vintage-input:focus {
+  background: #232323;
+  border-color: var(--vintage-secondary);
+  color: #f5f5f5;
+}
+
+/* Animaciones existentes */
+section, .card {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.show {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: all 0.6s;
+}
+
+/* Scroll margin para navegación */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Transiciones suaves */
+.navbar-brand, .nav-link, .btn {
+  transition: color 0.2s, background 0.2s;
+}
+
+/* Iconos de competencias */
+.text-purple {
+  color: var(--vintage-accent);
+}
+
+/* Footer */
+footer a {
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: var(--vintage-accent);
+}
+
+#inicio.vintage-section {
+  background: linear-gradient(135deg, #97deff 0%, #16a2b5 100%);
+  color: var(--text-main);
+}
+
+#inicio .vintage-title, #inicio .vintage-subtitle, #inicio p, #inicio a {
+  color: var(--text-main) !important;
+}
+
+.vintage-section:nth-of-type(even) {
+  background: linear-gradient(135deg, #1388ba 0%, #057989 100%);
+  color: var(--text-light);
+}
+
+.vintage-section:nth-of-type(even) .vintage-title,
+.vintage-section:nth-of-type(even) .vintage-heading,
+.vintage-section:nth-of-type(even) .vintage-card-title,
+.vintage-section:nth-of-type(even) .vintage-card-subtitle,
+.vintage-section:nth-of-type(even) .vintage-badge,
+.vintage-section:nth-of-type(even) p,
+.vintage-section:nth-of-type(even) li,
+.vintage-section:nth-of-type(even) label {
+  color: var(--text-light) !important;
+}
+
+.vintage-section:nth-of-type(even) .vintage-card,
+.vintage-section:nth-of-type(even) .vintage-skill-card,
+.vintage-section:nth-of-type(even) .vintage-project-card {
+  background: #057989;
+  color: var(--text-light);
+  border-color: #1388ba;
+} 

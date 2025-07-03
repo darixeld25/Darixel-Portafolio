@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Profesional - Darixel Acosta</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top vintage-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#inicio"><i class="fa-solid fa-code me-2"></i>Darixel Acosta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competencias">Competencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item">
+            <button id="darkModeToggle" class="btn btn-outline-light ms-2" title="Modo oscuro"><i class="fa-solid fa-moon"></i></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="d-flex align-items-center justify-content-center vintage-section" style="min-height: 90vh;">
+    <div class="container text-center py-5">
+      <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face" alt="Darixel Acosta" class="rounded-circle mb-3 vintage-profile" width="140" height="140">
+      <h1 class="display-4 vintage-title mb-2">Darixel Acosta</h1>
+      <p class="lead vintage-subtitle mb-3">Desarrolladora Web Full Stack & Educadora Digital</p>
+      <p class="mb-4">Transformo ideas en soluciones digitales modernas y enseño a otros a hacerlo posible.</p>
+      <a href="#contacto" class="btn vintage-btn btn-lg">Contáctame</a>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="container py-5 vintage-section">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" alt="Sobre mí" class="img-fluid rounded shadow vintage-image">
+      </div>
+      <div class="col-md-8">
+        <h2 class="vintage-heading mb-3">Sobre mí</h2>
+        <ul class="list-unstyled mb-3">
+          <li><i class="fa-solid fa-check text-success me-2"></i>+3 años de experiencia en desarrollo web</li>
+          <li><i class="fa-solid fa-check text-success me-2"></i>Especialista en React, Vue.js, Node.js y Python</li>
+          <li><i class="fa-solid fa-check text-success me-2"></i>Apasionada por la educación y la tecnología</li>
+        </ul>
+        <div class="vintage-highlight">
+          <i class="fas fa-quote-left me-2"></i>
+          <strong>Filosofía:</strong> "Cada línea de código es una oportunidad para aprender y enseñar"
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competencias -->
+  <section id="competencias" class="vintage-light-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 vintage-heading">Tecnologías y Herramientas</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3">Frontend</h5>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <span class="vintage-badge">HTML5</span>
+            <span class="vintage-badge">CSS3</span>
+            <span class="vintage-badge">JavaScript</span>
+            <span class="vintage-badge">React</span>
+            <span class="vintage-badge">Vue.js</span>
+            <span class="vintage-badge">Bootstrap</span>
+            <span class="vintage-badge">Sass</span>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3">Backend</h5>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <span class="vintage-badge">Node.js</span>
+            <span class="vintage-badge">Python</span>
+            <span class="vintage-badge">APIs REST</span>
+            <span class="vintage-badge">MongoDB</span>
+            <span class="vintage-badge">Firebase</span>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3">Herramientas</h5>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <span class="vintage-badge">Git</span>
+            <span class="vintage-badge">Docker</span>
+            <span class="vintage-badge">AWS</span>
+            <span class="vintage-badge">Real-time</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section id="experiencia" class="container py-5 vintage-section">
+    <h2 class="text-center mb-4 vintage-heading">Experiencia Profesional</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="vintage-card p-4 h-100">
+          <h5 class="vintage-card-title mb-1">Desarrolladora Frontend Senior</h5>
+          <div class="vintage-card-subtitle mb-2">TechCorp | 2022 - Presente</div>
+          <ul class="mb-2">
+            <li>Liderazgo de equipos frontend</li>
+            <li>Mentoría y mejores prácticas</li>
+            <li>Optimización de rendimiento</li>
+          </ul>
+          <div class="vintage-card-highlight small">
+            <i class="fas fa-star text-warning me-1"></i> Reduje el tiempo de carga de páginas en un 40%
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="vintage-card p-4 h-100">
+          <h5 class="vintage-card-title mb-1">Desarrolladora Full Stack</h5>
+          <div class="vintage-card-subtitle mb-2">StartupXYZ | 2020 - 2022</div>
+          <ul class="mb-2">
+            <li>Desarrollo de aplicaciones web completas</li>
+            <li>Integración frontend-backend</li>
+            <li>Implementación de APIs RESTful</li>
+          </ul>
+          <div class="vintage-card-highlight small">
+            <i class="fas fa-star text-warning me-1"></i> Implementé 15+ APIs RESTful exitosas
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="vintage-card p-4 h-100">
+          <h5 class="vintage-card-title mb-1">Desarrolladora Junior</h5>
+          <div class="vintage-card-subtitle mb-2">DigitalAgency | 2019 - 2020</div>
+          <ul class="mb-2">
+            <li>Desarrollo de sitios web para clientes</li>
+            <li>Trabajo en equipo y comunicación</li>
+            <li>Aprendizaje de bases sólidas</li>
+          </ul>
+          <div class="vintage-card-highlight small">
+            <i class="fas fa-star text-warning me-1"></i> Desarrollé 25+ sitios web para clientes
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="vintage-card p-4 h-100">
+          <h5 class="vintage-card-title mb-1">Educadora & Freelancer</h5>
+          <div class="vintage-card-subtitle mb-2">Proyectos Independientes | 2018 - Presente</div>
+          <ul class="mb-2">
+            <li>Desarrollo freelance</li>
+            <li>Creación de contenido educativo</li>
+            <li>Enseñanza de programación</li>
+          </ul>
+          <div class="vintage-card-highlight small">
+            <i class="fas fa-star text-warning me-1"></i> Más de 1000 estudiantes en mis cursos online
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="vintage-light-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 vintage-heading">Proyectos Destacados</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="vintage-project-card h-100">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" class="card-img-top" alt="E-commerce Platform">
+            <div class="card-body">
+              <h5 class="vintage-card-title">E-commerce Platform</h5>
+              <p class="vintage-card-text">Plataforma de comercio electrónico con pagos, inventario y panel de administración.</p>
+              <div class="mb-2">
+                <span class="badge vintage-badge me-1">React</span>
+                <span class="badge vintage-badge me-1">Node.js</span>
+                <span class="badge vintage-badge">MongoDB</span>
+              </div>
+              <a href="#" class="btn vintage-btn btn-sm mt-2" target="_blank">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="vintage-project-card h-100">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" class="card-img-top" alt="Task Management App">
+            <div class="card-body">
+              <h5 class="vintage-card-title">Task Management App</h5>
+              <p class="vintage-card-text">App para gestión de tareas y proyectos en equipo con colaboración en tiempo real.</p>
+              <div class="mb-2">
+                <span class="badge vintage-badge me-1">Vue.js</span>
+                <span class="badge vintage-badge me-1">Firebase</span>
+                <span class="badge vintage-badge">Real-time</span>
+              </div>
+              <a href="#" class="btn vintage-btn btn-sm mt-2" target="_blank">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="vintage-project-card h-100">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop" class="card-img-top" alt="Weather Dashboard">
+            <div class="card-body">
+              <h5 class="vintage-card-title">Weather Dashboard</h5>
+              <p class="vintage-card-text">Dashboard meteorológico interactivo con datos en tiempo real y APIs externas.</p>
+              <div class="mb-2">
+                <span class="badge vintage-badge me-1">JavaScript</span>
+                <span class="badge vintage-badge me-1">APIs</span>
+                <span class="badge vintage-badge">CSS3</span>
+              </div>
+              <a href="#" class="btn vintage-btn btn-sm mt-2" target="_blank">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="container py-5 vintage-section">
+    <h2 class="text-center mb-4 vintage-heading">Contacto</h2>
+    <form class="mx-auto vintage-form" style="max-width: 500px;">
+      <div class="mb-3">
+        <label for="nombre" class="form-label vintage-label">Nombre</label>
+        <input type="text" class="form-control vintage-input" id="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label vintage-label">Email</label>
+        <input type="email" class="form-control vintage-input" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label vintage-label">Mensaje</label>
+        <textarea class="form-control vintage-input" id="mensaje" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
+      </div>
+      <button type="submit" class="btn vintage-btn btn-lg w-100">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="vintage-footer text-center py-3 mt-5">
+    <div class="container">
+      <div class="mb-2">
+        <a href="#" class="vintage-social-link me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="#" class="vintage-social-link me-3"><i class="fab fa-github fa-lg"></i></a>
+        <a href="#" class="vintage-social-link me-3"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="vintage-social-link"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+      <p class="mb-0 vintage-footer-text small">&copy; 2024 Darixel Acosta. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
